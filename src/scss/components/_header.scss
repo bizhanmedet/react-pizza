@@ -8,6 +8,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media(max-width: 645px){
+      flex-direction: column-reverse;
+  
+      .header__cart {
+        margin-bottom: 30px;
+      }
+    }
+    @media(max-width: 760px){
+      .categories{
+      ul{
+        li{
+            padding: 8px 20px;
+        }
+      }
+    }
+  }
   }
 
   &__logo {

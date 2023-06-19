@@ -13,9 +13,7 @@ const Home = () => {
 
   React.useEffect(() => {
     setIsLoading(true);
-    fetch(
-      'https://64537f98e9ac46cedf26f275.mockapi.io/items?category=' + categoryId
-    )
+    fetch('https://64537f98e9ac46cedf26f275.mockapi.io/items?category=')
       .then((res) => res.json())
       .then((arr) => {
         setItems(arr);
